@@ -1,0 +1,292 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.container-fluid {
+    background-image: url("img/bgr4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+button {
+    outline: none;
+}
+
+p,
+dl {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.rh {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.rh-clear {
+    display: inline-block;
+}
+
+.rh-margin-30 {
+    margin: 0 0 30px 0;
+}
+
+.rh-100 {
+    padding: 100px 0;
+}
+
+.rh-section-title {
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    width: 65%;
+    padding: 0 0 45px 0;
+}
+
+.rh-section-title h2 {
+    margin-bottom: 15px;
+}
+
+.rh-check-btn {
+    padding: 9px 21px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.form-group {
+    margin: 0;
+}
+
+
+/* .form-control {
+    border-style: solid;
+    border-width: 1px;
+    height: 50px;
+}
+
+.form-control:focus,
+.form-control:active {
+    box-shadow: none;
+} */
+
+@media screen and (max-width: 1199px) {
+    .rh-100 {
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .rh-100 {
+        padding: 70px 0;
+    }
+    .rh-section-title {
+        padding: 0 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rh-100 {
+        padding: 60px 0;
+    }
+    .rh-section-title {
+        width: 100%;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .rh-100 {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .rh-100 {
+        padding: 30px 0;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    .rh-section-title {
+        padding: 0 0 30px 0;
+    }
+    .rh-section-title h2 {
+        margin-bottom: 10px;
+    }
+    .rh-xs-12 {
+        width: 100%;
+    }
+}
+
+
+/* Booking Page */
+
+.section-booking .ui-widget.ui-widget-content {
+    width: 100% !important;
+}
+
+.rh-datepicker {
+    display: inline-block;
+    margin: 0 0 30px 0;
+    width: 100%;
+    vertical-align: top;
+}
+
+.rh-check-availability.check-availability {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 20px 5px;
+    margin: 0 0 30px 0;
+}
+
+.rh-check-availability .btn.dropdown-toggle.btn-default {
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+}
+
+.rh-booking-rooms {
+    margin: 0 0 30px 0;
+}
+
+.rh-booking-rooms .rh-feature-box {
+    height: 100%;
+    box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.rh-booking-rooms .rh-feature-box .feature-detail {
+    padding: 20px 0 0px;
+}
+
+.rh-reservation-form .form-group {
+    padding: 0 0 30px 0;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    vertical-align: top;
+}
+
+.form-wizard .rh-reservation-complate {
+    text-align: center;
+    padding: 100px;
+    margin: 0 0 30px 0;
+}
+
+.form-wizard .rh-reservation-complate h4 {
+    font-size: 28px;
+}
+
+.ui-widget.ui-widget-content {
+    border-style: solid;
+    border-width: 1px;
+}
+
+@media screen and (max-width: 991px) {
+    .fw-15 {
+        margin-top: 15px;
+    }
+    .rh-booking-rooms .rating-star {
+        margin: 10px 0;
+    }
+    .rh-check-availability .rh-check-btn.pull-right {
+        margin: 60px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rh-booking-rooms .rh-feature-box {
+        margin: 0 0 30px 0;
+    }
+    .rh-booking-rooms {
+        margin: 0;
+    }
+    .form-wizard .rh-reservation-complate {
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ui-widget.ui-widget-content {
+        margin: 0;
+    }
+    .form-wizard-steps {
+        margin-top: 0;
+    }
+    .form-wizard-progress,
+    .form-wizard-progress-line {
+        display: none;
+    }
+    .form-wizard-tolal-steps-4 .form-wizard-step {
+        width: 50%;
+        margin: 0 0 30px 0;
+    }
+    .form-wizard-step.active .form-wizard-step-icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .form-wizard fieldset {
+        margin: 0;
+    }
+    .ui-datepicker-multi-2 .ui-datepicker-group {
+        width: 100%;
+    }
+    .form-wizard .rh-reservation-complate {
+        padding: 30px;
+    }
+    .form-wizard .rh-reservation-complate h4 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-wizard-tolal-steps-4 .form-wizard-step {
+        margin: 0 0 15px 0;
+    }
+    .fw-x15 {
+        margin-top: 15px;
+    }
+    .rh-booking-rooms .rh-feature-box .feature-detail .rh p {
+        white-space: normal;
+        line-height: 20px;
+    }
+    .rh-check-availability .rh-check-btn.pull-right {
+        margin: 30px 0 0 0;
+    }
+    .form-wizard .rh-reservation-complate h4 {
+        font-size: 18px;
+    }
+    .form-wizard .rh-reservation-complate p {
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,156 @@
+.bgr_contact {
+    background-image: url("img/bgr.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.section-contact {
+    padding-top: 30px;
+    padding-bottom: 65px;
+}
+
+@media (max-width: 767px) {
+    .section-contact {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+}
+
+.section-contact .contact .text {
+    color: #FFF;
+    margin-top: 15px;
+}
+
+.section-contact .contact .text h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .section-contact .contact .text h2 {
+        font-size: 20px;
+    }
+}
+
+.section-contact .contact .text p {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 1.428em;
+}
+
+@media (max-width: 767px) {
+    .section-contact .contact .text p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+
+.section-contact .contact .text ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.section-contact .contact .text ul li {
+    padding: 4px 0;
+}
+
+.section-contact .contact .text ul li .fa {
+    color: #8e7037;
+    font-size: 17px;
+    width: 8%;
+}
+
+.section-contact .contact .contact-form .field-textarea {
+    padding-top: 7px;
+}
+
+.section-contact .contact .contact-form .field-text,
+.section-contact .contact .contact-form .field-textarea {
+    height: 42px;
+    border: 2px solid #232323;
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-contact .contact .contact-form .field-text::placeholder,
+.section-contact .contact .contact-form .field-textarea::placeholder {
+    color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-contact .contact .contact-form .field-text:focus,
+.section-contact .contact .contact-form .field-textarea:focus {
+    border: 2px solid #8E7037;
+}
+
+.section-contact .contact .contact-form .field-textarea {
+    resize: none;
+    height: 210px;
+}
+
+.section-contact .contact .contact-form .btn {
+    margin-top: 15px;
+    width: 200px;
+    font-size: 16px;
+    height: 42px;
+    width: 200px;
+}
+
+.btn-room {
+    color: #FFF;
+    font-size: 12px;
+    height: 38px;
+    background: #8E7037;
+    line-height: 24px;
+    border-radius: 0px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.btn-room:hover {
+    border: 2px solid #8E7037;
+    background: transparent;
+    color: #8E7037;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* TABLET */
+
+@media screen and (max-width: 63.9375em) {
+    .col-md-7 {
+        width: 100%;
+    }
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 46.1875em) {
+    .footer {
+        position: relative;
+    }
+}

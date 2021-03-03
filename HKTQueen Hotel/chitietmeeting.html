@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meeting</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/chitietmeetting.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #363636; color: #fff;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="HKT Queen" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <div class="--dropdown">
+                            <button class="--dropbtn">ROOMS 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                            <div class="--dropdown-content">
+                                <a href="ViewDetailsPresidential.html">PRESIDENTIAL</a>
+                                <a href="ViewDetailsDeluxe.html">DELUXE</a>
+                                <a href="ViewDetailsSuperior.html">SUPERIOR</a>
+                                <a href="ViewDetailsStandard.html">STANDARD</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="--dropdown">
+                            <button class="--dropbtn">SERVICES 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                            <div class="--dropdown-content">
+                                <a href="restaurant.html">RESTAURANT</a>
+                                <a href="spa.html">SPA</a>
+                                <a href="pool.html">POOL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="booking.html">BOOKING</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="social">
+                            <button class="register signIn" id="signin" data-toggle="modal" data-target="#login">
+                                    <a href="signin.html">SIGN IN</a>
+                                  </button>
+                            <button class="register signUp" id="signup" data-toggle="modal" data-target="#register">
+                                    <a href="signup.html">SIGN UP</a>
+                                </button>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="admin" href="admin/html/admin.html">ADMINISTRATOR</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle user-management" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw user"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Activity Log</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END MENU -->
+    </div>
+    <div class="container">
+        <h2 class="header"> Event & Meeting </h2>
+        <div class="col-sm-12">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/meeting/q1.webp" alt="Chicago" style="width:100%; height: 70%;">
+                        <div class="carousel-caption">
+                            <h1> Hà Nội FTK Hotel</h1>
+                            <p class="header3">Noble and charismatic Hotel ! </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/meeting/q2.webp" alt="New York" style="width:100%; height: 70%;">
+                        <div class="carousel-caption">
+                            <h1> Đà Nẵng ABC Hotel </h1>
+                            <p class="header3"> Fortune and lucky !</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/meeting/q3.jpg" alt="" style="width:100%; height: 70%;">
+                        <div class="carousel-caption">
+                            <h1> HCM HBM Hotel</h1>
+                            <p class="header3"> We always love you !</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="header1"> Room Describle </p>
+                <h6 class="text">
+                    The multipurpose room is modernly equipped to suit events from 10 to 15 guests, is the venue for events, seminars, intimate parties with family, friends and colleagues. This place is also the venue for weddings, year-end parties, major commercial events,
+                    exhibitions or important press conferences. </h6>
+            </div>
+            <div class="col-sm-8">
+                <div class="card">
+                    <img src="images/meeting/q4.jpg" alt="" width="100%">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="container">
+        <p> </p>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/meeting/q5.jpg" alt="Card image cap" height="90%" width="100%">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h4 class="text1"> The room of meeting is so Clean, comfortable desks and desks, It making meetings efficient and successful. </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/meeting/q6.jpg" alt="Card image cap" height="100%" width="100%">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h4 class="text1"> After the meeting, you had a delicious, fresh dessert that the fresh fruits brought you after the meeting. </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/meeting/q7.png" height=" 90% " width="100% ">
+                    <div class="card-body ">
+                        <p class="card-text ">
+                            <h4 class="text1">
+                                <h4 class="text1">At the end of the meeting were the mutual agreements and successes. The happy handshakes of the parties. </h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>STT</th>
+                                <th> Name </th>
+                                <th>width</th>
+                                <th>length</th>
+                                <th>Characteristics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td> Meeting room </td>
+                                <td> 10 m </td>
+                                <td> 15m </td>
+                                <td> luxury , Fresh </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td> Dining room </td>
+                                <td> 20m </td>
+                                <td> 30m </td>
+                                <td> Clean , Comfortable </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td> presidential meeting room</td>
+                                <td> 30 m </td>
+                                <td> 50m </td>
+                                <td> luxury , Beautiful </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <p class="header1"> Payment table </p>
+            <br>
+            <hr>
+        </div>
+        <div class="col-sm-6">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Pay</th>
+                    </tr>
+                </thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td> meeting Room </td>
+                        <td> 10 million </td>
+                        <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td> Flowers </td>
+                        <td> 5 million </td>
+                        <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td> Fruits </td>
+                        <td> 4 millon </td>
+                        <td><i class="fas fa-times" style="color:red;"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-6">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">STT</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Pay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td> Wifi </td>
+                        <td> Free </td>
+                        <td><i class="fas fa-times" style="color: red;"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td> Water </td>
+                        <td> 1 million </td>
+                        <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td> Cup </td>
+                        <td> Free </td>
+                        <td><i class="fas fa-times" style="color: red;"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <div style="background-size:0vmax; background-color:#363636; color: #fff; " class="footer">
+        <div class="container">
+            <div class="row2">
+                <div class="col-5">
+                    <p>
+                        <h5>CONTACT</h5>
+                    </p>
+                    <hr>
+                    <p>
+                        Hotline:
+                        <a href="# ">0396 567 451</a>
+                    </p>
+                    <p>
+                        Email:
+                        <a href="# ">hktqueenhotel@gmail.com</a>
+                    </p>
+                    <p>
+                        Address:
+                        <a href="https://www.google.com/maps/place/99+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh,+Ph%C6%B0%E1%BB%9Bc+M%E1%BB%B9,+S%C6%A1n+Tr%C3%A0,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@16.059758,108.2414633,17z/data=!3m1!4b1!4m5!3m4!1s0x3142177f2ced6d8b:0xeac35f2960ca74a4!8m2!3d16.0597966!4d108.2434978?hl=vi-VN"> 99 To Hien Thanh, Da Nang, Vietnam</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://google.com/"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://instagram.com/"><i class="fa fa-instagram" style="background-color: none;"></i></a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <p>
+                        <h5>SUPPORT</h5>
+                    </p>
+                    <hr>
+                    <p>
+                        <a href="#">Support</a>
+                    </p>
+                    <p>
+                        <a href="#">Contribute</a>
+                    </p>
+                </div>
+                <div class="col-5">
+                    <p>
+                        <h5>FOLLOW US</h5>
+                    </p>
+                    <hr>
+                    <p>
+                        Enter email to subscribe to receive useful information about learning from HKT Queen Hotel
+                    </p>
+                    <input type="email" name="" id=" " placeholder="Your email... " class="form-control ">
+                    <br>
+                    <button type="button" class="btn btn-secondary ">Registation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        checkSignIn();
+    </script>
+</body>
+
+</html>

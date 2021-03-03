@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+body {
+    /* background-image: url('img/nen.jpeg'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Heebo';
+}
+
+#buttons {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin: 30px;
+    width: 200px;
+    transition: all .3s ease;
+}
+
+.effect-scale:hover {
+    transform: scale(1.05);
+}
+
+.btn-solid {
+    background-image: linear-gradient(130deg, #fc00ff 0%, #00dbde 100%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: white;
+    font-weight: 900;
+}

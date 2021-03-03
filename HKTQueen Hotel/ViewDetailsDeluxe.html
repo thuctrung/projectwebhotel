@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deluxe</title>
+    <script src="bootstrap/js/jquery-3.3.1.min.js "></script>
+    <script src="bootstrap/js/bootstrap.min.js "></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/typeRooms.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/homePage.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #363636; color: #fff;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="HKT Queen" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <div class="--dropdown">
+                            <button class="--dropbtn">ROOMS 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                            <div class="--dropdown-content">
+                                <a href="ViewDetailsPresidential.html">PRESIDENTIAL</a>
+                                <a href="ViewDetailsDeluxe.html">DELUXE</a>
+                                <a href="ViewDetailsSuperior.html">SUPERIOR</a>
+                                <a href="ViewDetailsStandard.html">STANDARD</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="--dropdown">
+                            <button class="--dropbtn">SERVICES 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                            <div class="--dropdown-content">
+                                <a href="restaurant.html">RESTAURANT</a>
+                                <a href="spa.html">SPA</a>
+                                <a href="pool.html">POOL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="booking.html">BOOKING</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="social">
+                            <button class="register signIn" id="signin" data-toggle="modal" data-target="#login">
+                                    <a href="signin.html">SIGN IN</a>
+                                  </button>
+                            <button class="register signUp" id="signup" data-toggle="modal" data-target="#register">
+                                    <a href="signup.html">SIGN UP</a>
+                                </button>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="admin" href="admin/html/admin.html">ADMINISTRATOR</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle user-management" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw user"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Activity Log</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END MENU -->
+
+        <!-- Deluxe Room 1 -->
+        <div class="container"><br>
+            <center>
+                <h1 style="color: #8E1E20;">DELUXE ROOM 1</h1>
+            </center>
+            <hr>
+            <br>
+            <div style="font-size: 20px; ">This special room will give you a great feeling. You will enjoy a large and comfortable space. Modern technology equipment will meet all your needs. If there is a chance, we HKT Queen is always ready to welcome you. We hope to receive your
+                trust. Welcome my customers.</div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-2 ">
+                    <div style="font-size: 60px;font-family: fantasy;color: #00676B;"><br><br>VIEW<br>OF<br>ROOM</div>
+                </div>
+                <div class="col-sm-10 ">
+                    <img class="card-img-top " src="images/Deluxe/Deluxe1.jpg">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-9 ">
+                    <img class="card-img-top " src="images/Deluxe/toiletDeluxe1.jpg">
+                </div>
+                <div class="col-sm-3 ">
+                    <div style="font-size: 60px; color: #184785;font-family: fantasy; "><br><br>NICE<br>TOILET</div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-4 ">
+                    <div style="font-size: 60px; color: #38044B;font-family: fantasy; "><br><br>LIVINGROOM</div>
+                </div>
+                <div class="col-sm-8 ">
+                    <img class="card-img-top " src="images/Deluxe/livingroomDeluxe1.jpg">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <table class="table table-hover active">
+                    <thead>
+                        <tr style="background:#008489;">
+                            <th scope="col">#</th>
+                            <th scope="col">Descript</th>
+                            <th scope="col">Detail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Kind of room</td>
+                            <td>Deluxe</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Price</td>
+                            <td>10.000.000đ/day</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Room number</td>
+                            <td>2147</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="buttons">
+                <a href="#" class="btn btn-solid effect-scale">BOOK NOW</a>
+            </div>
+            <hr>
+
+            <!-- Deluxe Room 2 -->
+            <div class="container"><br>
+                <center>
+                    <h1 style="font-family: fantasy;color: #8E1E20;">DELUXE ROOM 2</h1>
+                </center>
+                <hr>
+                <br>
+                <div style="font-size: 20px; ">This special room will give you a great feeling. You will enjoy a large and comfortable space. Modern technology equipment will meet all your needs. If there is a chance, we HKT Queen is always ready to welcome you. We hope to receive
+                    your trust. Welcome my customers.</div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-sm-2 ">
+                        <div style="font-size: 60px;font-family: fantasy;color: #00676B;"><br><br>VIEW<br>OF<br>ROOM</div>
+                    </div>
+                    <div class="col-sm-10 ">
+                        <img class="card-img-top " src="images/Deluxe/Deluxe2.jpg">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-9 ">
+                        <img class="card-img-top " src="images/Deluxe/toiletDeluxe2.jpg">
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div style="font-size: 60px; color: #184785;font-family: fantasy; "><br><br>NICE<br>TOILET</div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-4 ">
+                        <div style="font-size: 60px; color: #38044B;font-family: fantasy; "><br><br>LIVINGROOM</div>
+                    </div>
+                    <div class="col-sm-8 ">
+                        <img class="card-img-top " src="images/Deluxe/livingroomDeluxe2.jpg">
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <table class="table table-hover active">
+                        <thead>
+                            <tr style="background:#008489;">
+                                <th scope="col">#</th>
+                                <th scope="col">Descript</th>
+                                <th scope="col">Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Kind of room</td>
+                                <td>Deluxe</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Price</td>
+                                <td>10.000.000đ/day</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Room number</td>
+                                <td>2145</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="buttons">
+                    <a href="#" class="btn btn-solid effect-scale">BOOK NOW</a>
+                </div>
+                <hr>
+
+                <!-- Deluxe Room 3 -->
+                <div class="container"><br>
+                    <center>
+                        <h1 style="font-family: fantasy;color: #8E1E20;">DELUXE ROOM 3</h1>
+                    </center>
+                    <hr>
+                    <br>
+                    <div style="font-size: 20px; ">This special room will give you a great feeling. You will enjoy a large and comfortable space. Modern technology equipment will meet all your needs. If there is a chance, we HKT Queen is always ready to welcome you. We hope to receive
+                        your trust. Welcome my customers.</div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-2 ">
+                            <div style="font-size: 60px;font-family: fantasy;color: #00676B;"><br><br>VIEW<br>OF<br>ROOM</div>
+                        </div>
+                        <div class="col-sm-10 ">
+                            <img class="card-img-top " src="images/Deluxe/Deluxe3.jpg">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-9 ">
+                            <img class="card-img-top " src="images/Deluxe/toiletDeluxe3.jpg">
+                        </div>
+                        <div class="col-sm-3 ">
+                            <div style="font-size: 60px; color: #184785;font-family: fantasy; "><br><br>NICE<br>TOILET</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4 ">
+                            <div style="font-size: 60px; color: #38044B;font-family: fantasy; "><br><br>LIVINGROOM</div>
+                        </div>
+                        <div class="col-sm-8 ">
+                            <img class="card-img-top " src="images/Deluxe/livingroomDeluxe3.jpg">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <table class="table table-hover active">
+                            <thead>
+                                <tr style="background:#008489;">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Descript</th>
+                                    <th scope="col">Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Kind of room</td>
+                                    <td>Deluxe</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Price</td>
+                                    <td>10.000.000đ/day</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Room number</td>
+                                    <td>2148</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="buttons">
+                        <a href="#" class="btn btn-solid effect-scale">BOOK NOW</a>
+                    </div>
+                    <hr>
+
+                    <!-- Deluxe Room 4 -->
+                    <div class="container"><br>
+                        <center>
+                            <h1 style="font-family: fantasy;color: #8E1E20;">DELUXE ROOM 4</h1>
+                        </center>
+                        <hr>
+                        <br>
+                        <div style="font-size: 20px; ">This special room will give you a great feeling. You will enjoy a large and comfortable space. Modern technology equipment will meet all your needs. If there is a chance, we HKT Queen is always ready to welcome you. We hope to
+                            receive your trust. Welcome my customers.</div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-2 ">
+                                <div style="font-size: 60px;font-family: fantasy;color: #00676B;"><br><br>VIEW<br>OF<br>ROOM</div>
+                            </div>
+                            <div class="col-sm-10 ">
+                                <img class="card-img-top " src="images/Deluxe/Deluxe4.jpg">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-9 ">
+                                <img class="card-img-top " src="images/Deluxe/toiletDeluxe4.jpg">
+                            </div>
+                            <div class="col-sm-3 ">
+                                <div style="font-size: 60px; color: #184785;font-family: fantasy; "><br><br>NICE<br>TOILET</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-4 ">
+                                <div style="font-size: 60px; color: #38044B;font-family: fantasy; "><br><br>LIVINGROOM</div>
+                            </div>
+                            <div class="col-sm-8 ">
+                                <img class="card-img-top " src="images/Deluxe/livingroomDeluxe4.jpg">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <table class="table table-hover active">
+                                <thead>
+                                    <tr style="background:#008489;">
+                                        <th scope="col">#</th>
+                                        <th scope="col">Descript</th>
+                                        <th scope="col">Detail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Kind of room</td>
+                                        <td>Deluxe</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Price</td>
+                                        <td>10.000.000đ/day</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Room number</td>
+                                        <td>2131</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="buttons">
+                            <a href="#" class="btn btn-solid effect-scale">BOOK NOW</a>
+                        </div>
+                        <hr>
+                        <!-- Deluxe Room 5 -->
+                        <div class="container"><br>
+                            <center>
+                                <h1 style="font-family: fantasy;color: #8E1E20;">DELUXE ROOM 5</h1>
+                            </center>
+                            <hr>
+                            <br>
+                            <div style="font-size: 20px; ">This special room will give you a great feeling. You will enjoy a large and comfortable space. Modern technology equipment will meet all your needs. If there is a chance, we HKT Queen is always ready to welcome you. We hope
+                                to receive your trust. Welcome my customers.</div>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2 ">
+                                    <div style="font-size: 60px;font-family: fantasy;color: #00676B;"><br><br>VIEW<br>OF<br>ROOM</div>
+                                </div>
+                                <div class="col-sm-10 ">
+                                    <img class="card-img-top " src="images/Deluxe/Deluxe5.jpg">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-9 ">
+                                    <img class="card-img-top " src="images/Deluxe/toiletDeluxe5.jpg">
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <div style="font-size: 60px; color: #184785;font-family: fantasy; "><br><br>NICE<br>TOILET</div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-4 ">
+                                    <div style="font-size: 60px; color: #38044B;font-family: fantasy; "><br><br>LIVINGROOM</div>
+                                </div>
+                                <div class="col-sm-8 ">
+                                    <img class="card-img-top " src="images/Deluxe/livingroomDeluxe5.jpg">
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <table class="table table-hover active">
+                                    <thead>
+                                        <tr style="background:#008489;">
+                                            <th scope="col">#</th>
+                                            <th scope="col">Descript</th>
+                                            <th scope="col">Detail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Kind of room</td>
+                                            <td>Deluxe</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Price</td>
+                                            <td>10.000.000đ/day</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Room number</td>
+                                            <td>2135</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="buttons">
+                                <a href="#" class="btn btn-solid effect-scale">BOOK NOW</a>
+                            </div>
+                            <hr>
+
+                            <!-- Deluxe Room 6 -->
+                            <div class="container"><br>
+                                <center>
+                                    <h1 style="font-family: fantasy;color: #8E1E20;">DELUXE ROOM 6</h1>
+                                </center>
+                                <hr>
+                                <br>
+                                <div style="font-size: 20px; ">This special room will give you a great feeling. You will enjoy a large and comfortable space. Modern technology equipment will meet all your needs. If there is a chance, we HKT Queen is always ready to welcome you. We
+                                    hope to receive your trust. Welcome my customers.</div>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-2 ">
+                                        <div style="font-size: 60px;font-family: fantasy;color: #00676B;"><br><br>VIEW<br>OF<br>ROOM</div>
+                                    </div>
+                                    <div class="col-sm-10 ">
+                                        <img class="card-img-top " src="images/Deluxe/Deluxe6.jpg">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-9 ">
+                                        <img class="card-img-top " src="images/Deluxe/toiletDeluxe6.jpg">
+                                    </div>
+                                    <div class="col-sm-3 ">
+                                        <div style="font-size: 60px; color: #184785;font-family: fantasy; "><br><br>NICE<br>TOILET</div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-4 ">
+                                        <div style="font-size: 60px; color: #38044B;font-family: fantasy; "><br><br>LIVINGROOM</div>
+                                    </div>
+                                    <div class="col-sm-8 ">
+                                        <img class="card-img-top " src="images/Deluxe/livingroomDeluxe6.jpg">
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <table class="table table-hover active">
+                                        <thead>
+                                            <tr style="background:#008489;">
+                                                <th scope="col">#</th>
+                                                <th scope="col">Descript</th>
+                                                <th scope="col">Detail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Kind of room</td>
+                                                <td>Deluxe</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Price</td>
+                                                <td>10.000.000đ/day</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Room number</td>
+                                                <td>2136</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="buttons">
+                                    <a href="#" class="btn btn-solid effect-scale">BOOK NOW</a>
+                                </div>
+                                <hr>
+                                <!-- Deluxe Room 7 -->
+                                <div class="container"><br>
+                                    <center>
+                                        <h1 style="font-family: fantasy;color: #8E1E20;">DELUXE ROOM 7</h1>
+                                    </center>
+                                    <hr>
+                                    <br>
+                                    <div style="font-size: 20px; ">This special room will give you a great feeling. You will enjoy a large and comfortable space. Modern technology equipment will meet all your needs. If there is a chance, we HKT Queen is always ready to welcome you.
+                                        We hope to receive your trust. Welcome my customers.</div>
+                                    <br>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-2 ">
+                                            <div style="font-size: 60px;font-family: fantasy;color: #00676B;"><br><br>VIEW<br>OF<br>ROOM</div>
+                                        </div>
+                                        <div class="col-sm-10 ">
+                                            <img class="card-img-top " src="images/Deluxe/Deluxe7.jpg">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-9 ">
+                                            <img class="card-img-top " src="images/Deluxe/toiletDeluxe7.jpg">
+                                        </div>
+                                        <div class="col-sm-3 ">
+                                            <div style="font-size: 60px; color: #184785;font-family: fantasy; "><br><br>NICE<br>TOILET</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-4 ">
+                                            <div style="font-size: 60px; color: #38044B;font-family: fantasy; "><br><br>LIVINGROOM</div>
+                                        </div>
+                                        <div class="col-sm-8 ">
+                                            <img class="card-img-top " src="images/Deluxe/livingroomDeluxe7.jpg">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="row">
+                                        <table class="table table-hover active">
+                                            <thead>
+                                                <tr style="background:#008489;">
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Descript</th>
+                                                    <th scope="col">Detail</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Kind of room</td>
+                                                    <td>Deluxe</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Price</td>
+                                                    <td>10.000.000đ/day</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Room number</td>
+                                                    <td>2138</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="buttons">
+                                        <a href="#" class="btn btn-solid effect-scale">BOOK NOW</a>
+                                    </div>
+                                    <hr>
+                                    <!-- Deluxe Room 8 -->
+                                    <div class="container"><br>
+                                        <center>
+                                            <h1 style="font-family: fantasy;color: #8E1E20;">DELUXE ROOM 8</h1>
+                                        </center>
+                                        <hr>
+                                        <br>
+                                        <div style="font-size: 20px; ">This special room will give you a great feeling. You will enjoy a large and comfortable space. Modern technology equipment will meet all your needs. If there is a chance, we HKT Queen is always ready to welcome
+                                            you. We hope to receive your trust. Welcome my customers.</div>
+                                        <br>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-2 ">
+                                                <div style="font-size: 60px;font-family: fantasy;color: #00676B;"><br><br>VIEW<br>OF<br>ROOM</div>
+                                            </div>
+                                            <div class="col-sm-10 ">
+                                                <img class="card-img-top " src="images/Deluxe/Deluxe8.jpg">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-9 ">
+                                                <img class="card-img-top " src="images/Deluxe/toiletDeluxe8.jpg">
+                                            </div>
+                                            <div class="col-sm-3 ">
+                                                <div style="font-size: 60px; color: #184785;font-family: fantasy; "><br><br>NICE<br>TOILET</div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-sm-4 ">
+                                                <div style="font-size: 60px; color: #38044B;font-family: fantasy; "><br><br>LIVINGROOM</div>
+                                            </div>
+                                            <div class="col-sm-8 ">
+                                                <img class="card-img-top " src="images/Deluxe/livingroomDeluxe8.jpg">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <div class="row">
+                                            <table class="table table-hover active">
+                                                <thead>
+                                                    <tr style="background:#008489;">
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Descript</th>
+                                                        <th scope="col">Detail</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Kind of room</td>
+                                                        <td>Deluxe</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Price</td>
+                                                        <td>10.000.000đ/day</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Room number</td>
+                                                        <td>2130</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div id="buttons">
+                                            <a href="#" class="btn btn-solid effect-scale">BOOK NOW</a>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <script src="jquery-3.3.1.min.js "></script>
+                                    <script src="bootstrap/js/bootstrap.min.js "></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        checkSignIn();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+:root {
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    /* background-image: url('https://data.1freewallpapers.com/download/starfish-sand-beach-sea-foam-landscape.jpg'); */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #CC9900;
+}
+
+.nav-link {
+    padding-top: 10px!important;
+}
+
+.user-management {
+    display: none;
+}
+
+#admin {
+    display: none;
+}
+
+
+/*xử lý menu*/
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*list product*/
+
+.list-product-title {
+    width: 100%;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.list-product-subtitle {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+/*product card*/
+
+.card-product {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px 2px 2px;
+}
+
+.slider_1 {
+    height: 600px;
+}
+
+span {
+    outline: none;
+}
+
+.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    width: 33.333333%;
+}
+
+.col-md-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    width: 41.666667%;
+    text-align: justify;
+}
+
+.col-md-6 {
+    text-align: justify;
+}
+
+.row1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.row2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.open-button {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 100px;
+    border-radius: 1.5cm;
+}
+
+
+/* The popup chat - hidden by default */
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+
+/* Add styles to the form container */
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+
+/* Full-width textarea */
+
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+
+/* When the textarea gets focus, do something */
+
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/send button */
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+
+/* menu start*/
+
+.--dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.--dropdown .--dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    padding: 2.5px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+.--dropdown-content {
+    background-color: #363636;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.--dropdown-content a {
+    float: none;
+    color: var(--black-color)sss;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover,
+.nav-link:hover,
+.--dropdown:hover .--dropbtn {
+    color: #04850c!important;
+}
+
+.--dropdown-content a:hover {
+    background-color: rgb(60, 180, 60);
+    color: var(--black-color);
+}
+
+.--dropdown:hover .--dropdown-content {
+    display: block;
+}
+
+.signIn,
+.signUp {
+    margin-top: 10px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background: none;
+    border: none;
+}
+
+.register:focus {
+    outline: none;
+}
+
+
+/* menu end */
+
+.user {
+    padding-top: 0px;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 63.9375em) {
+    .slider_1 {
+        height: 500px;
+    }
+    .infor_1 {
+        flex-direction: column-reverse;
+    }
+    .infor_1 .card-img-top,
+    .infor_2 .card-img-top {
+        height: auto;
+        width: 690px;
+    }
+    .col-md-5 {
+        margin-left: 15px;
+        width: 95%;
+        flex: auto;
+    }
+    .row1 {
+        flex-direction: column-reverse;
+    }
+    .col-md-6 {
+        height: auto;
+        width: 720px;
+    }
+    .room2 {
+        display: none;
+    }
+    .col-md-3 {
+        flex: auto;
+        width: 50%;
+    }
+    a.nav-link {
+        margin-left: 15px;
+    }
+    div.social {
+        flex-direction: column-reverse;
+    }
+    .col-sm-3,
+    .col-md-7,
+    .col-sm-9 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 46.1875em) {
+    .slider_1 {
+        height: 200px;
+    }
+    .infor_1 .card-img-top,
+    .infor_2 .card-img-top {
+        height: auto;
+        width: 355px;
+    }
+    .row1>div {
+        width: 385px;
+    }
+    .row2 {
+        flex-direction: column-reverse;
+    }
+    .col-5,
+    .col-2 {
+        width: 100%;
+        text-align: center;
+    }
+    .room2 {
+        display: none;
+    }
+    .col-md-3 {
+        width: 100%;
+    }
+}
+
+.thumbnail {
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,52 @@
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.header1 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: teal;
+}
+
+.header2 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+}
+
+.header3 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.text1 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table th {
+    font-size: 18px;
+    text-align: center;
+}
+
+tr {
+    height: 40px;
+    width: 100%;
+}
+
+table td {
+    font-size: 15px;
+    text-align: center;
+}

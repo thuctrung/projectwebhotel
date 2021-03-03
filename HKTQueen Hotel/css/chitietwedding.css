@@ -1,0 +1,89 @@
+.header {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.div {
+    background-color: darksalmon;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.header1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: orangered;
+}
+
+.col-sm-2 p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.seeMore {
+    margin-left: 750px;
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: tan;
+}
+
+.header2 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: orangered;
+}
+
+.card-img-top {
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+.card-img-top:hover {
+    width: 250px;
+}
+
+.header3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: orangered;
+}
+
+.header4 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: darkcyan;
+}
+
+.col-sm-3 p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.thumbnail {
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 0.3s;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.2);
+}

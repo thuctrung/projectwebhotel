@@ -1,0 +1,156 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: url("https://images.pexels.com/photos/1040499/pexels-photo-1040499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.main {
+    display: inline;
+    display: flex;
+}
+
+.main .slider-content {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.slider-wrapper {
+    width: 550px;
+    height: 370px;
+    overflow: hidden;
+    border: 5px solid #242424;
+}
+
+.slider-image {
+    overflow: hidden;
+    height: auto;
+}
+
+.slider-image img {
+    max-width: 100%;
+}
+
+.slider-ready {
+    display: flex;
+    transition: transform 0.61s ease-out;
+}
+
+.slider-panel-controller {
+    position: relative;
+}
+
+.slider-ctrl {
+    position: absolute;
+    width: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    display: inline-block;
+    border-radius: 0;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.slider-ctrl:hover {
+    opacity: 1;
+}
+
+.slider-ctrl span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(187, 187, 187, 0.7);
+    padding: 0 12px;
+}
+
+.slider-ctrl.slider-left-ctrl {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.slider-right-ctrl {
+    right: 0;
+}
+
+.slider-left-ctrl {
+    left: 0;
+}
+
+.footer-text {
+    color: #acacac;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* REPONSIVE TABLET */
+
+@media screen and (max-width: 63.9375em) {
+    .main {
+        position: relative;
+        flex-direction: column-reverse;
+    }
+    .main .col-6 {
+        width: 100%;
+        margin-left: 0px;
+        text-align: justify;
+    }
+    .main .col-5 {
+        width: 100%;
+        margin-left: 0px;
+        text-align: justify;
+    }
+    .main .slider-wrapper {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .slider-image img {
+        width: 100%;
+    }
+}
+
+
+/* REPONSIVE MOBILE */
+
+@media screen and (max-width: 46.1875em) {
+    .footer {
+        position: relative;
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    .main .slider-wrapper {
+        width: 100%;
+        height: auto;
+    }
+    .main .col-6 {
+        width: 100%;
+        margin-left: 0px;
+        text-align: justify;
+    }
+    .main .col-5 {
+        width: 100%;
+        margin-left: 0px;
+        text-align: justify;
+    }
+}

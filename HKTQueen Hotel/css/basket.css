@@ -1,0 +1,79 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* div {
+    border: 1px solid black;
+    height: 100%;
+} */
+
+.roomBooking>div {
+    position: relative;
+    border: solid 2px;
+    border-radius: 0.3rem;
+    border-color: #D5A677;
+    margin: 10px 10px;
+    padding: 2px 2px;
+}
+
+.basket {
+    position: relative;
+    border: solid 2px;
+    border-radius: .3rem;
+    border-color: #D5A677;
+    margin: 10px 0;
+    padding: 2px 2px;
+}
+
+.btn-book {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.priceRoom {
+    position: absolute;
+    bottom: 30px;
+    right: 5px;
+}
+
+.roomBooking>div>div {
+    padding: 5px 5px;
+}
+
+.btn-select {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.roomInBasket {
+    float: right;
+}
+
+.trash {
+    position: relative;
+}
+
+.trash:before {
+    content: "\f1f8";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: red;
+    font-size: 18px;
+    padding-right: 0.5em;
+    bottom: 49px;
+    right: -150px;
+    cursor: pointer;
+}
+
+#total {
+    margin: 0px 20px;
+}

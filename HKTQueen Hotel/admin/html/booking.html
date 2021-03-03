@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Tables - SB Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <!--<script src="admin.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0"></script>
+    <script src="../js/booking.js"></script>
+
+</head>
+
+<body>
+
+    <div id="layoutSidenav_content">
+        <div class="product">
+            <div class="title">
+                <H1> BOOKING </H1>
+            </div>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <i class="fas fa-plus mr-2"></i>Create
+            </button>
+            <table class="table">
+                <thead class="thead-light text-center">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Arrive</th>
+                        <th>Depart</th>
+                        <th>Room Type</th>
+                        <th>Img</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center" id="product-admin"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--Modal Form nhap du lieu dang Modal_Bootstrap     class="btn btn-outline-danger" data-toggle="modal" data-target="#updateProduct"><i class="fas fa-cogs"-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <!-- Them du lieu -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add booking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-row">
+                        <!--<div class="col-12"
+                                <input class="form-control" type="text" id="id" placehoder="id">
+                            </div>
+                            -->
+
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="name" placeholder="Full Name">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="mobile" placeholder="Mobile Number">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="email" placeholder="Email">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="arive" placeholder="Arrive Date">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="depart" placeholder="Depart Date">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="roomtype" placeholder="Room type">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="img" placeholder="Img">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="price" placeholder="Price">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="status" placeholder="Status">
+                        </div>
+                    </form>
+                    <button class="btn btn-outline-danger mt-3" onclick="push_data()">Thêm</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cap nhat du lieu -->
+    <div class="modal fade" id="updateProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit booking</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-row">
+
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="namee" placeholder="Full Name">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="mobilee" placeholder="Mobile Number">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="emaile" placeholder="Email">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="arrivee" placeholder="Arrived Date">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="departe" placeholder="Depart Date">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="roomtypee" placeholder="Room type">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="imagee" placeholder="Img">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="pricee" placeholder="Price">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input class="form-control" type="text" id="statuse" placeholder="Status">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p id="sub">Save changes</p>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+
+    <script src="bootstrap/js/jquery-3.3.1.min.js "></script>
+    <script src="bootstrap/js/bootstrap.min.js "></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chitietwedding.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #363636; color: #fff;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="HKT Queen" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <div class="--dropdown">
+                            <button class="--dropbtn">ROOMS 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                            <div class="--dropdown-content">
+                                <a href="ViewDetailsPresidential.html">PRESIDENTIAL</a>
+                                <a href="ViewDetailsDeluxe.html">DELUXE</a>
+                                <a href="ViewDetailsSuperior.html">SUPERIOR</a>
+                                <a href="ViewDetailsStandard.html">STANDARD</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="--dropdown">
+                            <button class="--dropbtn">SERVICES 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                            <div class="--dropdown-content">
+                                <a href="restaurant.html">RESTAURANT</a>
+                                <a href="spa.html">SPA</a>
+                                <a href="pool.html">POOL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="booking.html">BOOKING</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="social">
+                            <button class="register signIn" id="signin" data-toggle="modal" data-target="#login">
+                                    <a href="signin.html">SIGN IN</a>
+                                  </button>
+                            <button class="register signUp" id="signup" data-toggle="modal" data-target="#register">
+                                    <a href="signup.html">SIGN UP</a>
+                                </button>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="admin" href="admin/html/admin.html">ADMINISTRATOR</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle user-management" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-fw user"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Activity Log</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END MENU -->
+        <P>
+            <center>
+                <h1>Wedding luxury</h1>
+            </center>
+        </P>
+        <img src="https://d1zpvjny0s6omk.cloudfront.net/media/fileupload/2017/09/22/Bakti-Kavoukjian-Jessica%20Claire%20Photography-balloroom.jpg" alt="" height="60%" width="100%">
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="header1"> List Food in wedding </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-2">
+                <p> Ice cream </p>
+                <div class="thumbnail">
+                    <img src="images/event/kem.jpg">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <p> Meat </p>
+                <div class="thumbnail">
+                    <img src="images/event/meat.jpg" alt="" height="100%" width="100%">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <p> Ckicken </p>
+                <div class="thumbnail">
+                    <img src="images/event/tom.jpg" alt="" height="100%" width="100%">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <p> Fish </p>
+                <div class="thumbnail">
+                    <img src="images/event/fish.jpg" alt="" height="100%" width="100%">
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+                <p>Fruits</p>
+                <div class="thumbnail">
+                    <img src="images/event/fruit.jfif" alt="" height="100%" width="100%">
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+                <p> Drink</p>
+                <div class="thumbnail">
+                    <img src="images/event/drink.jpg" alt="" height="100%" width="100%">
+                </div>
+
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <hr>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="images/event/goi-thap-cam.jpg" alt="Card image cap" height="100%" width="100%">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/event/dau.jpg" alt="Card image cap" height="100%" width="100%">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="images/event/banhtrang.jpg" alt="Card image cap" height="100%" width="100%">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <button type="button" class="seeMore" data-toggle="collapse" data-target="#demo"> See More </button>
+            <hr>
+            <div id="demo" class="collapse">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <p> Bun </p>
+                        <img src="images/event/bunrieu.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-2">
+                        <p> Hambago </p>
+                        <img src="images/event/hamburger.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-2">
+                        <p> Salat </p>
+                        <img src="images/event/salad.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-2">
+                        <p> Fish </p>
+                        <img src="images/event/muc.webp" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-2">
+                        <p> Cake </p>
+                        <img src="images/event/banhngot.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-2">
+                        <p> Bip Bop </p>
+                        <img src="images/event/uyenuong.jpg" alt="" height="100%" width="100%">
+
+                    </div>
+                </div>
+                <br><br><br><br>
+                <hr>
+                <br>
+            </div>
+
+        </div>
+        <br>
+        <div class="container-fluid">
+            <div class="header2"> Room Decor </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="images/event/tiec.jpg" alt="" height="100%" width="100%">
+                        <div class="card-body">
+                            <p class="card-text">The interior decoration is made according to customer's request.The table can accommodate party .</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="images/event/tiechong.jpg" alt="" height="80%" width="100%">
+                        <div class="card-body">
+                            <p class="card-text">Luxurious and elegant space helps the wedding party become more beautiful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+
+        <div class="container-fluid">
+            <button type="button" class="seeMore" data-toggle="collapse" data-target="#demo1"> See More </button>
+            <hr>
+            <div id="demo1" class="collapse">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p> OutSide wedding </p>
+                        <img src="images/event/leduong.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-3">
+                        <p> Bride and Groom</p>
+                        <img src="images/event/xoainon.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-3">
+                        <p> Cake wedding </p>
+                        <img src="images/event/banhkem.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-sm-3">
+                        <p> Enntrance gate </p>
+                        <img src="images/event/leduong2.jpg" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <br><br><br><br>
+                <hr>
+                <br>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="images/event/xecuoi.jpg" alt="" height="100%" width="100%">
+                        <div class="card-body">
+                            <p class="card-text">The interior decoration is made according to customer's request.The table can accommodate party foods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img src="images/event/leduong3.jpg" alt="" height="100%" width="100%">
+                        <div class="card-body">
+                            <p class="card-text">luxurious and elegant space helps the wedding party become more beautiful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <br><br>
+        <hr>
+        <div class="container-fluid">
+            <p class="header3"> Fee Paid </p>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <table class="table table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th>Check </th>
+                                <th>Name</th>
+                                <th>Prices</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td>Ice Cream</td>
+                                <td>10 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Meat </td>
+                                <td> 70 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Chicken wing </td>
+                                <td> 13 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Fish </td>
+                                <td> 15 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Friuts </td>
+                                <td> 13 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Drink </td>
+                                <td> 23 million </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <table class="table table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th>Check </th>
+                                <th>Name</th>
+                                <th>Prices</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Flowers </td>
+                                <td>10 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Cars </td>
+                                <td> 10 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Cakes </td>
+                                <td> 5 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> MC </td>
+                                <td> 10 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Wainters </td>
+                                <td> 13 million </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                                <td> Shiny black </td>
+                                <td> 3 million </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <div class="container-fluid">
+            <p class="header4"> Fee Free </p>
+
+        </div>
+        <div class="container">
+            <div class="col-sm-12">
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>Check </th>
+                            <th>Name</th>
+                            <th>Prices</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                            <td> Wifi </td>
+                            <td><i class="fas fa-times" style="color: red;"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                            <td> Parking space
+                            </td>
+                            <td> <i class="fas fa-times" style="color: red;"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                            <td> Refill phone battery.
+                            </td>
+                            <td> <i class="fas fa-times" style="color: red;"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                            <td> Bottled water.
+                            </td>
+                            <td><i class="fas fa-times" style="color: red;"></i> </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-check" style="color: darkgreen;"></i></td>
+                            <td> Personal hygiene tools.</td>
+                            <td> <i class="fas fa-times" style="color: red;"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style="background-size:0vmax; background-color:#363636; color: #fff; " class="footer">
+            <div class="container">
+                <div class="row2">
+                    <div class="col-5">
+                        <p>
+                            <h5>CONTACT</h5>
+                        </p>
+                        <hr>
+                        <p>
+                            Hotline:
+                            <a href="# ">0396 567 451</a>
+                        </p>
+                        <p>
+                            Email:
+                            <a href="# ">hktqueenhotel@gmail.com</a>
+                        </p>
+                        <p>
+                            Address:
+                            <a href="https://www.google.com/maps/place/99+T%C3%B4+Hi%E1%BA%BFn+Th%C3%A0nh,+Ph%C6%B0%E1%BB%9Bc+M%E1%BB%B9,+S%C6%A1n+Tr%C3%A0,+%C4%90%C3%A0+N%E1%BA%B5ng+550000,+Vi%E1%BB%87t+Nam/@16.059758,108.2414633,17z/data=!3m1!4b1!4m5!3m4!1s0x3142177f2ced6d8b:0xeac35f2960ca74a4!8m2!3d16.0597966!4d108.2434978?hl=vi-VN"> 99 To Hien Thanh, Da Nang, Vietnam</a>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                            <a href="https://google.com/"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://instagram.com/"><i class="fa fa-instagram" style="background-color: none;"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <p>
+                            <h5>SUPPORT</h5>
+                        </p>
+                        <hr>
+                        <p>
+                            <a href="#">Support</a>
+                        </p>
+                        <p>
+                            <a href="#">Contribute</a>
+                        </p>
+                    </div>
+                    <div class="col-5">
+                        <p>
+                            <h5>FOLLOW US</h5>
+                        </p>
+                        <hr>
+                        <p>
+                            Enter email to subscribe to receive useful information about learning from HKT Queen Hotel
+                        </p>
+                        <input type="email" name="" id=" " placeholder="Your email... " class="form-control ">
+                        <br>
+                        <button type="button" class="btn btn-secondary ">Registation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        checkSignIn();
+    </script>
+</body>
+
+</html>
